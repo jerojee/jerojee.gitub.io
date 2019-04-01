@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- This begins the code fore my person site -->
+<html>
+  <head>
+    <title> Jeremy Ojeda </title>
+    <!--Links to Bootstrap-->
+
+    <!--Project links in current pathway-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="aboutMe.css">
+    <link rel="stylesheet" type="text/css" href="resumePage.css">
+    <link rel="stylesheet" type="text/css" href="projPage.css">
+    <!--Links to jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+          e.preventDefault();
+
+          var target = this.hash;
+          var $target = $(target);
+
+          $('html, body').animate({
+            'scrollTop': $target.offset().top
+          }, 1000, 'swing');
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <a id ="top"></a>
+    <header>
+        <div class="navbar">
+            <ul>
+              <li class="name" ><strong>JEREMY OJEDA</strong></li>
+              <li><a href="#page4" ><strong>PROJECTS</strong></a></li>
+              <li><a href="#page3" ><strong>RESUME</strong></a></li>
+              <li><a href="#page2" ><strong>ABOUT ME</strong></a></li>
+              <li><a href="#top" ><strong>HOME</strong></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="intro">
+      <div class="inner">
+        <div class="content">
+          <h1><strong>cout << "Hello World!\n";</strong><br></h1>
+            <p><strong>WELCOME TO MY PERSONAL WEBSITE.</strong></p>
+        </div>
+      </div>
+    </section>
+
+<!-- About Me section-->
+<section class="about">
+  <h2><a class= "anchor1" id="page2">ABOUT ME</a></h2>
+  <h2 class="border1">An aspiring software engineer looking to do cool things through code.</h2>
+    <div class="me">
+      <h3>
+        CITY:
+          <P>
+            Murrieta, California
+          </P>
+      </h3>
+      <h3>
+        EDUCATION:
+          <P>
+            California State University, San Marcos
+          </P>
+      </h3>
+      <h3>
+        MAJOR:
+          <P>
+            Computer Science
+          </P>
+      </h3>
+      <h3>
+        EXPECTED GRADUATION:
+          <P>
+            Fall 2018
+          </P>
+      </h3>
+      <h3>
+        INTERESTS:
+          <P>
+            Guitar<br> Rock n' Roll <br> Hanging out <br> Gym <br> Tennis
+          </P>
+      </h3>
+    </div>
+</section>
+
+<section class = "resume">
+  <h2><a class="anchor2" id="page3"> RESUME </a></h2>
+
+  <a href ="Resume.pdf">resume.pdf</a>
+  <h3> SKILLS </h3>
+  <div class ="skills">
+    <ul>
+        <li><a>C++</a></li>
+        <li><a>HTML / CSS</a></li>
+        <li><a>Object-Oriented Programming</a></li>
+        <li><a>Data Structures</a></li>
+        <li><a>Computer Architecture</a></li>
+        <li><a>Assembly Language</a></li>
+        <li><a>GNU/Linux</a></li>
+        <li><a>Critical Thinking and Problem Solving</a></li>
+        <li><a>Logic</a></li>
+        <li><a>Communication</a></li>
+        <li><a>Collaboration</a></li>
+        <li><a>Team-Oriented</a></li>
+        <li><a>Self-motivated</a></li>
+        <li><a>Strong drive to learn</a></li>
+    </ul>
+  </div>
+
+    <h3>EDUCATION</h3>
+  <div class ="education">
+    <h4>California State University, San Marcos</h4>
+    <div class ="info">
+      <ul>
+          <li><a class="degree"><em>Bachelor of Science, Computer Science</em></a></li>
+          <li><a><em>Expected Fall 2018</em></a></li>
+      </ul>
+    </div>
+      <h4> RELEVANT COURSEWORK </h4>
+        <div class = "courses">
+          <ul>
+            <li><a>Object-Oriented Programming</a></li>
+              <li><a>Data Structures and Algorithms</a></li>
+              <li><a>Computer Architecture</a></li>
+              <li><a>Operating Systems</a></li>
+              <li><a>Programming Languages</a></li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+<section class = "projects">
+  <h2><a class="anchor3" id="page4"> PROJECTS </a></h2>
+  <h2 class = "border2"> Here are projects I have been working on, some projects may have a video example to further demonstrate them!</h2>
+
+
+<ul class="projectList">
+  <li class="media">
+    <img class="pic" src="website.jpg" alt="Generic placeholder image" height="100" width="100">
+    <div class="media-body">
+      <h3 class="projName">My Personal Website</h3>
+      <p>This project is the website you are on right now! It is a personal site used to showcase my resume and other projects that I will be working on. I will continue to try and keep this site update as much as possible! This website was implemented using HTML/CSS and JavaScript, and is formatted for desktop use.</p>
+      <h6 class = "bot"></h6>
+    </div>
+  </li>
+
+  <li class="media">
+    <img class="pic" src="..." >
+    <div class="media-body">
+      <h3 class="projName">Simple Multithreaded Program</h3>
+      <p>A simple multi-threaded program in C that computes PI based on how many points are generated within a certain area of a circle. This program uses the Monte Carlo algorithm to do so.</p>
+      <h6 class = "bot"></h6>
+    </div>
+  </li>
+
+  <li class="media">
+    <img class="pic" src="..." >
+    <div class="media-body">
+      <h3 class="projName">Dynamic Stack Program</h3>
+      <p>Dynamic Stack Program implemented in C++. Created a dynamic stack that allows user to dynamically use, implemented through vector functions. </p>
+      <h6 class = "bot"></h6>
+    </div>
+  </li>
+
+  <li class="media">
+    <img class="pic" src="..." >
+    <div class="media-body">
+      <h3 class="projName">Circuits: Computer</h3>
+      <p>This project is currently in progress: Making a computer for my Digital Circuits course. Implemented through Xilinx/ISE using the embbedded circuit software to program a Digilent Basys 2 board. The computer will be able to compute bits of data and use registers, memory. </p>
+      <h6 class = "bot"></h6>
+    </div>
+  </li>
+
+</ul>
+</section>
+
+  <!--Link Scripts-->
+
+  </body>
+</html>

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+.resume{
+  height: 100%;
+  width: 100%;
+  padding-bottom: 270px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  background-color: #e8ebef;
+
+}
+
+.resume h2{
+  padding: 10px;
+}
+.resumeDownload{
+  text-align: center;
+}
+.anchor2{
+  padding-top: 100px;
+}
+
+.resume h2{
+    padding-top: 35px;
+}
+
+.resume h3{
+  display: block;
+  height: 40px;
+  text-align: center;
+  padding-top: 15px;
+  border-top: 2px solid #55595e;
+  border-bottom: 2px solid #55595e;
+  margin-left: 50px;
+  margin-right: 50px;
+  list-style: none;
+}
+
+.skills ul li{
+list-style: none;
+}
+
+.skills ul li a{
+  font-family: 'Raleway' , sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 40px;
+  display: block;
+  padding: 5px;
+}
+
+.info ul li{
+  list-style: none;
+}
+
+.info ul li a{
+  font-family: 'Raleway' , sans-serif;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 5px;
+  padding-right: 49px;
+}
+
+.courses ul li{
+  list-style: none;
+}
+.courses{
+  font-family: 'Raleway' , sans-serif;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding-right: 49px;
+}
